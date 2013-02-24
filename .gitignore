@@ -1,3 +1,6 @@
 vim/bundle
 vim/tmp
+emacs/elpa
+emacs/savefile
+emacs/auto-save-list
 
