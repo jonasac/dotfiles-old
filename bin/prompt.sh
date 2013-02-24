@@ -4,6 +4,13 @@ CYAN='\[\033[0;36m\]'
 BLUE='\[\033[1;34m\]'
 YELLOW='\[\033[0;33m\]'
 NORMAL='\[\033[0m\]'
+function set_virtual_env {
+    if [[ $VIRTUAL_ENV != "" ]]; then
+        VENV="${BLUE}[${VIRTUAL_ENV##*/}]${NORMAL}:"
+    else
+        VENV=''
+    fi
+}
 
 function is_git_repository {
   git branch > /dev/null 2>&1
@@ -50,12 +57,13 @@ function set_git_branch {
 }
 
 function set_prompt () {
-  if is_git_repository ; then
+set_virtual_env
+if is_git_repository ; then
     set_git_branch
-  else
+else
     BRANCH=''
-  fi
-  PS1="${GREEN}\h${NORMAL}:${BLUE}\W${NORMAL}${BRANCH}${CYAN}-> ${NORMAL}"
+fi
+PS1="${GREEN}\h${NORMAL}:${VENV}${BLUE}\W${NORMAL}${BRANCH}${CYAN}-> ${NORMAL}"
 }
 
 PROMPT_COMMAND=set_prompt
