@@ -92,10 +92,15 @@ augroup END
 " }}}
 " Bindings ------------------------------- {{{
 let mapleader = " "
-noremap <leader>ev :e $MYVIMRC<cr>
+noremap <leader>ev :edit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
-command W w
-command Q q
+nnoremap <leader><space> :nohlsearch<cr>
+if !exists(":W")
+    command W w
+endif
+if !exists(":Q")
+    command Q q
+endif
 inoremap jk <Esc>
 inoremap <esc> <nop>
 inoremap <esc> <nop>
