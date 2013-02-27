@@ -4,11 +4,12 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
-Bundle 'ciaranm/inkpot'
+Bundle 'nanotech/jellybeans.vim'
 filetype plugin indent on
 syntax on
 " }}}
 set encoding=utf-8              " Set default encoding to UTF-8
+set cursorline                  " See where the cursor is
 set tabstop=4                   " a tab is four spaces
 set softtabstop=4               " insert/delete 4 spaces when hitting TAB/BACKSPACE
 set expandtab                   " use spaces, not tabs
@@ -33,7 +34,7 @@ set textwidth=79                " Text never wider than 80chars
 set backup                      " Enable backups
 set undofile                    " Let vim save undo data in a file so that it can be restored even itf the file is closed
 set showbreak=↪                 " Show linebreaks 
-colorscheme inkpot
+colorscheme jellybeans
 " Backup stuff ---------------- {{{
 set backupdir=~/.vim/tmp/backup//     " Keep backups in its own folder
 set undodir=~/.vim/tmp/undo//
