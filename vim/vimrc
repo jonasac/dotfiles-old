@@ -5,9 +5,15 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-foreplay'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
+Bundle 'benmills/vimux'
 filetype plugin indent on
 syntax on
 " }}}
+set noeb vb t_vb=               " Turn of the bells
 set encoding=utf-8              " Set default encoding to UTF-8
 set cursorline                  " See where the cursor is
 set tabstop=4                   " a tab is four spaces
@@ -96,6 +102,7 @@ let mapleader = " "
 noremap <leader>ev :edit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader><space> :nohlsearch<cr>
+nnoremap <leader>bn :bNext<cr>
 if !exists(":W")
     command W w
 endif
