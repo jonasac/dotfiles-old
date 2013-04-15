@@ -6,10 +6,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-foreplay'
+Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
+Bundle 'tpope/vim-classpath'
 filetype plugin indent on
 syntax on
 " }}}
