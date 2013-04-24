@@ -4,6 +4,10 @@ export TERM='xterm-256color'
 export GREP_OPTIONS="--color"
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/code
+export VIRTUALENV_DISTRIBUTE=true
+source /usr/local/share/python/virtualenvwrapper.sh
 alias v=vim
-PATH="~/.bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:~/.bin:/usr/local/share/python:$PATH"
 . ~/.bin/prompt.sh
