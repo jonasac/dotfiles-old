@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
 Bundle 'tpope/vim-classpath'
+Bundle 'ervandew/supertab'
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 filetype plugin indent on
 syntax on
