@@ -10,4 +10,6 @@ export VIRTUALENV_DISTRIBUTE=true
 source /usr/local/share/python/virtualenvwrapper.sh
 alias v=vim
 export PATH="/usr/local/opt/ruby/bin:~/.bin:/usr/local/share/python:$PATH"
+export GOPATH=$HOME/mygo
+export PATH=$PATH:$HOME/mygo/bin
 . ~/.bin/prompt.sh
