@@ -12,6 +12,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
 Bundle 'tpope/vim-classpath'
 Bundle 'ervandew/supertab'
+Bundle 'sjl/badwolf'
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 filetype plugin indent on
 syntax on
@@ -43,7 +44,7 @@ set textwidth=79                " Text never wider than 80chars
 set backup                      " Enable backups
 set undofile                    " Let vim save undo data in a file so that it can be restored even itf the file is closed
 set showbreak=↪                 " Show linebreaks 
-colorscheme jellybeans
+colorscheme badwolf
 " Backup stuff ---------------- {{{
 set backupdir=~/.vim/tmp/backup//     " Keep backups in its own folder
 set undodir=~/.vim/tmp/undo//
