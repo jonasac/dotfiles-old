@@ -100,6 +100,10 @@ augroup filetype_vim
 	autocmd!
 	autocmd FileType vim setlocal foldmethod=marker
 augroup END
+augroup filetype_muttrc
+    autocmd!
+    autocmd FileType muttrc setlocal foldmethod=marker
+augroup END
 " }}}
 " Bindings ------------------------------- {{{
 let mapleader = " "

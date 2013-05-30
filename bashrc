@@ -12,4 +12,7 @@ alias v=vim
 export PATH="/usr/local/opt/ruby/bin:~/.bin:/usr/local/share/python:$PATH"
 export GOPATH=$HOME/mygo
 export PATH=$PATH:$HOME/mygo/bin
+alias mutt-gmail='LOCAL_CONFIG=gmail mutt'
+alias mutt-work='LOCAL_CONFIG=work mutt'
+export EDITOR=vim
 . ~/.bin/prompt.sh
