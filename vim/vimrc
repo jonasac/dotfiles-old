@@ -9,11 +9,8 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
-Bundle 'benmills/vimux'
-Bundle 'tpope/vim-classpath'
 Bundle 'ervandew/supertab'
-Bundle 'sjl/badwolf'
-set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
+Bundle 'wikitopian/hardmode'
 filetype plugin indent on
 syntax on
 " }}}
@@ -37,14 +34,14 @@ set splitright                  " Put new window to the right of current one
 set modelines=0                 " Modelines ain't safe
 set wildmenu                    " Enable the wildmenu
 set wildmode=longest:full,full  " Make the wildmenu behave
+set wildignore+=*.class,*/target/*
 set showmatch                   " When a bracket is inserted quickly jump to the matching one and back
 set wrap                        " Wrap long lines
 set textwidth=79                " Text never wider than 80chars
-"set formatoptions=qrn1
 set backup                      " Enable backups
 set undofile                    " Let vim save undo data in a file so that it can be restored even itf the file is closed
 set showbreak=↪                 " Show linebreaks 
-colorscheme badwolf
+colorscheme jellybeans
 " Backup stuff ---------------- {{{
 set backupdir=~/.vim/tmp/backup//     " Keep backups in its own folder
 set undodir=~/.vim/tmp/undo//
@@ -117,7 +114,7 @@ endif
 if !exists(":Q")
     command Q q
 endif
-inoremap jk <Esc>
+inoremap jk <esc>
 inoremap <esc> <nop>
 inoremap <esc> <nop>
 inoremap <left> <nop>
