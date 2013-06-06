@@ -7,8 +7,6 @@ Bundle 'gmarik/vundle'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'wikitopian/hardmode'
 filetype plugin indent on
