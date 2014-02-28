@@ -26,7 +26,7 @@ function set_git_branch {
     state="${RED}"
   fi
 
-  branch_pattern="^# On branch ([^${IFS}]*)"
+  branch_pattern="^# On branch ([\b\w+\b])"
   if [[ ${git_status} =~ ${branch_pattern} ]]; then
     branch=${BASH_REMATCH[1]}
   fi
