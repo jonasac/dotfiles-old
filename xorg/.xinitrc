@@ -6,6 +6,8 @@ synclient HorizTwoFingerScroll=1
 
 feh --bg-center ~/.wallpaper.png
 
+setxkbmap us -option ctrl:nocaps
+
 xrdb -merge ~/.Xresources 
 
 exec i3
