@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -122,12 +122,16 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-bindsym XF86KbdBrightnessUp exec --no-startup-id $HOME/bin/kbd_bl +1
-bindsym XF86KbdBrightnessDown exec --no-startup-id $HOME/bin/kbd_bl -1
 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5-
 bindsym XF86AudioMute exec amixer -q set Master toggle
+
+# Change the borders of all windows
+new_window 1pixel
+
+exec --no-startup-id setxkbmap us -option ctrl:nocaps 
+exec --no-startup-id ~/bin/touchpad
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -160,4 +164,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 	position top
+        font: Terminus
 }
